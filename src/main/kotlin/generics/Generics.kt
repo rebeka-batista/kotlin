@@ -1,5 +1,9 @@
 package generics
 
+/*
+    Quando temos funções iguais podemos usar generics ao invés de replicar código
+ */
+
 fun main() {
     val strings = toList<String>("Rebeka", "Batista")
     println(strings)
