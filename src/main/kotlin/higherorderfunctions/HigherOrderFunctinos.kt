@@ -28,6 +28,22 @@ fun main() {
     println(ints)
     var list = filtrar(ints, ::numerosPares)
     println(list)
+
+    /*
+    Com lambda:
+    var list = filtrar(ints, {numero:Int -> numerosPares(numero)})
+    println(list)
+
+    -> Sempre que a função receber receber apenas um parâmetro, poderemos usar o parâmetro "it"
+       var list = filtrar(ints, {numero:Int -> numerosPares(it)})
+       ou
+       var list = filtrar(ints) { it % 2 == 0)
+       println(list)
+
+       var list = filtrar(ints) { it > 3)
+       println(list)
+     */
+
     list = filtrar(ints, ::numerosMaiorQue3)
     println(list)
 }
